@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-palm-maroon: #8B1A2B;
+  --color-palm-dark: #5A0F1B;
+  --color-palm-light: #B8293E;
+  --color-palm-gold: #C9A84C;
+  --color-palm-cream: #FAF6F0;
+  --color-palm-black: #1A1A1A;
+  --color-palm-gray: #6B7280;
+  --color-palm-silver: #E5E7EB;
+  --font-cairo: "Cairo", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-cairo);
+  background: var(--color-palm-cream);
+  color: var(--color-palm-black);
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+@keyframes pulse-badge {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.3); }
+  50% { box-shadow: 0 0 0 12px rgba(201, 168, 76, 0); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.8) translateY(30px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
