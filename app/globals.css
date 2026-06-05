@@ -1,39 +1,48 @@
 @import "tailwindcss";
 
 @theme {
-  --color-palm-maroon: #8B1A2B;
-  --color-palm-dark: #5A0F1B;
-  --color-palm-light: #B8293E;
-  --color-palm-gold: #C9A84C;
-  --color-palm-cream: #FAF6F0;
-  --color-palm-black: #1A1A1A;
-  --color-palm-gray: #6B7280;
-  --color-palm-silver: #E5E7EB;
+  --color-bg: #0C0A0F;
+  --color-bg-card: #14121A;
+  --color-bg-elevated: #1C1924;
+  --color-border: #2A2635;
+  --color-gold: #C9A84C;
+  --color-gold-dim: rgba(201, 168, 76, 0.15);
+  --color-gold-border: rgba(201, 168, 76, 0.25);
+  --color-text: #F5F3F0;
+  --color-text-dim: #9B95A6;
+  --color-text-muted: #6B6478;
+  --color-whatsapp: #25D366;
+  --color-maroon: #8B1A2B;
+  --color-maroon-dark: #5A0F1B;
   --font-cairo: "Cairo", sans-serif;
   --font-playfair: "Playfair Display", serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-cairo);
-  background: var(--color-palm-cream);
-  color: var(--color-palm-black);
+  background: var(--color-bg);
+  color: var(--color-text);
   overflow-x: hidden;
   line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
-@keyframes pulse-badge {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.3); }
-  50% { box-shadow: 0 0 0 12px rgba(201, 168, 76, 0); }
+::selection {
+  background: rgba(201, 168, 76, 0.3);
+  color: #fff;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.4); }
+  50% { box-shadow: 0 0 0 10px rgba(201, 168, 76, 0); }
 }
 
 @keyframes blink {
@@ -41,7 +50,12 @@ body {
   50% { opacity: 0.3; }
 }
 
-@keyframes popIn {
-  from { opacity: 0; transform: scale(0.8) translateY(30px); }
+@keyframes pop-in {
+  from { opacity: 0; transform: scale(0.85) translateY(20px); }
   to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
