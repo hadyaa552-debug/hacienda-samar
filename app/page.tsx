@@ -267,7 +267,7 @@ export default function Home(){
       <h2 className="sec-h">سجل اهتمامك في هاسيندا راس الحكمة — Hacienda Ras El Hekma</h2>
       <p style={{color:"rgba(255,255,255,.55)",fontSize:14,maxWidth:560,margin:"0 auto 4px"}}>املأ النموذج وسيتواصل معك مستشار من بالم هيلز — Palm Hills لآخر الأسعار والوحدات المتاحة</p>
       <form className="c-form" ref={fr} onSubmit={(e:FormEvent)=>{e.preventDefault();sub(fr,sFs)}} style={{textAlign:"right"}}>
-        <input type="hidden" name="access_key" value={WK}/><input type="hidden" name="subject" value="Lead — هاسيندا راس الحكمة بالم هيلز Hacienda Ras El Hekma"/><input type="hidden" name="from_name" value="Hacienda Landing - Grandeur Spaces"/><input type="checkbox" name="botcheck" style={{display:"none"}}/>
+        <input type="hidden" name="access_key" value={WK}/><input type="hidden" name="subject" value="Lead — هاسيندا راس الحكمة بالم هيلز Hacienda Ras El Hekma"/><input type="hidden" name="from_name" value="Hacienda Landing "/><input type="checkbox" name="botcheck" style={{display:"none"}}/>
         <div className="f-row">
           <div className="f-fld"><label>الاسم الكامل *</label><input name="name" placeholder="أدخل اسمك" required/></div>
           <div className="f-fld"><label>رقم الهاتف *</label><input name="phone" type="tel" dir="ltr" placeholder="01012345678" required/></div>
@@ -294,7 +294,7 @@ export default function Home(){
       <div className="ftr-legal">
         <button onClick={()=>sPrv(true)}>سياسة الخصوصية</button><a href="#about-agent">من نحن</a><a href="#contact">تواصل معنا</a>
       </div>
-      <p className="ftr-cr">© 2026 Grandeur Spaces · وكيل معتمد من بالم هيلز · جميع الأسعار استرشادية · Palm Hills Hacienda Ras El Hekma</p>
+      <p className="ftr-cr">© 2026  · وكيل معتمد من بالم هيلز · جميع الأسعار استرشادية · Palm Hills Hacienda Ras El Hekma</p>
     </div></footer>
 
     {/* POPUP */}
@@ -328,7 +328,7 @@ export default function Home(){
         <p style={{marginBottom:12}}><strong style={{color:"var(--color-navy)"}}>٤. حقوقك:</strong> طلب الاطلاع أو التصحيح أو الحذف في أي وقت.</p>
         <p><strong style={{color:"var(--color-navy)"}}>٥. التواصل:</strong> <a href={`tel:${PI}`} style={{color:"var(--color-gold)"}}>{PD}</a></p>
       </div>
-      <p style={{fontSize:10,color:"#999",marginTop:14}}>آخر تحديث: يونيو 2026 · Grandeur Spaces</p>
+      <p style={{fontSize:10,color:"#999",marginTop:14}}>آخر تحديث: يونيو 2026 · </p>
     </div></>}
 
     {/* COOKIE */}
