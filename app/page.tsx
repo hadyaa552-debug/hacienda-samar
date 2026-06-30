@@ -255,8 +255,8 @@ export default function Home(){
     {/* AGENT */}
     <div className="agent" id="about-agent"><div className="agent-in fin">
       <span className="sec-bdg">من نحن</span>
-      <h3>Grandeur Spaces — وكيل معتمد من بالم هيلز — Palm Hills</h3>
-      <p>Grandeur Spaces وكيل مبيعات معتمد من بالم هيلز للتطوير العقاري. نقدم استشارات مجانية لمشروع هاسيندا راس الحكمة — Hacienda Ras El Hekma ونساعدك في اختيار الوحدة المناسبة والتعاقد مع المطور مباشرة.</p>
+      <h3> — وكيل معتمد من بالم هيلز — Palm Hills</h3>
+      <p> وكيل مبيعات معتمد من بالم هيلز للتطوير العقاري. نقدم استشارات مجانية لمشروع هاسيندا راس الحكمة — Hacienda Ras El Hekma ونساعدك في اختيار الوحدة المناسبة والتعاقد مع المطور مباشرة.</p>
       <p>جميع الأسعار استرشادية وقابلة للتغيير من بالم هيلز — Palm Hills دون إشعار مسبق.</p>
       <p>تواصل: <a href={`tel:${PI}`} style={{color:"var(--color-gold)",fontWeight:700}}>{PD}</a></p>
       <span className="agent-bdg">وكيل معتمد · Authorized Agent</span>
@@ -286,7 +286,7 @@ export default function Home(){
     {/* FOOTER */}
     <footer className="ftr"><div className="ftr-in">
       <img src="/images/palm-hills-logo-white.png" alt="Palm Hills بالم هيلز"/>
-      <p className="ftr-t">Grandeur Spaces — وكيل معتمد من بالم هيلز. هاسيندا راس الحكمة — Hacienda Ras El Hekma، الكيلو ٢٣٨ الساحل الشمالي. Palm Hills Hacienda · هاسيندا بالم هيلز.</p>
+      <p className="ftr-t"> — وكيل معتمد من بالم هيلز. هاسيندا راس الحكمة — Hacienda Ras El Hekma، الكيلو ٢٣٨ الساحل الشمالي. Palm Hills Hacienda · هاسيندا بالم هيلز.</p>
       <div className="ftr-links">
         <a className="ftr-link" href={`tel:${PI}`} onClick={()=>track("call_footer")}><Ph/><span>{PD}</span></a>
         <a className="ftr-link" href={WU} target="_blank" rel="noopener" onClick={()=>track("wa_footer")}>💬 واتساب</a>
